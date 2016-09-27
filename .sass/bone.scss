@@ -1,0 +1,79 @@
+/*!
+ * Bone v0.1 (http://sinayazdi.com/bone)
+ * Copyright 2016 Sina Yazdi
+ * Licensed under MIT (https://github.com/yazdi/bone/blob/master/LICENSE)
+ */
+@import "compass";
+
+$container-width: 1077px;
+$columns: 12;
+$gutter: 1%;
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after,
+.container:before, .container:after,
+.row:before, .row:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+}
+
+.row {
+
+}
+
+%col {
+	float: left;
+	margin: 0 $gutter / 2;
+	position: relative;
+	min-height: 1px;
+}
+
+
+@for $i from 1 through $columns {
+	.col#{$i} {
+		@extend %col;
+	}
+}
+
+@for $i from 1 through $columns {
+	.col#{$i} {
+		width: 100 * $i / $columns * 1% - $gutter;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	%cols {
+		width: 99%;
+	}
+	@for $i from 1 through $columns {
+		.col#{$i} {
+			@extend %cols;
+		}
+	}
+
+
+	@for $i from 1 through $columns {
+		.col#{$i}s {
+			width: 100 * $i / $columns * 1% - $gutter;
+		}
+	}
+
+}

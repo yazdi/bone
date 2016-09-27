@@ -1,0 +1,138 @@
+/*!
+ * Bone v0.1 (http://sinayazdi.com/bone)
+ * Copyright 2016 Sina Yazdi
+ * Licensed under MIT (https://github.com/yazdi/bone/blob/master/LICENSE)
+ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after,
+.container:before, .container:after,
+.row:before, .row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.container {
+  max-width: 1077px;
+  margin: 0 auto;
+}
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+  float: left;
+  margin: 0 0.5%;
+  position: relative;
+  min-height: 1px;
+}
+
+.col1 {
+  width: 7.33333%;
+}
+
+.col2 {
+  width: 15.66667%;
+}
+
+.col3 {
+  width: 24%;
+}
+
+.col4 {
+  width: 32.33333%;
+}
+
+.col5 {
+  width: 40.66667%;
+}
+
+.col6 {
+  width: 49%;
+}
+
+.col7 {
+  width: 57.33333%;
+}
+
+.col8 {
+  width: 65.66667%;
+}
+
+.col9 {
+  width: 74%;
+}
+
+.col10 {
+  width: 82.33333%;
+}
+
+.col11 {
+  width: 90.66667%;
+}
+
+.col12 {
+  width: 99%;
+}
+
+@media screen and (max-width: 768px) {
+  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+    width: 99%;
+  }
+
+  .col1s {
+    width: 7.33333%;
+  }
+
+  .col2s {
+    width: 15.66667%;
+  }
+
+  .col3s {
+    width: 24%;
+  }
+
+  .col4s {
+    width: 32.33333%;
+  }
+
+  .col5s {
+    width: 40.66667%;
+  }
+
+  .col6s {
+    width: 49%;
+  }
+
+  .col7s {
+    width: 57.33333%;
+  }
+
+  .col8s {
+    width: 65.66667%;
+  }
+
+  .col9s {
+    width: 74%;
+  }
+
+  .col10s {
+    width: 82.33333%;
+  }
+
+  .col11s {
+    width: 90.66667%;
+  }
+
+  .col12s {
+    width: 99%;
+  }
+}
